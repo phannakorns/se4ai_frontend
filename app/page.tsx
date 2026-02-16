@@ -53,7 +53,7 @@ export default function Home() {
       ระบบตรวจจับวัตถุด้วย YOLO
     </h1>
     <p className="text-gray-500 text-lg md:text-xl font-medium tracking-wide uppercase">
-      663380038-8 | พรรณกร แสงคำ
+      663380038-8 | พรรณกร
     </p>
     <div className="mt-6 flex justify-center gap-4">
       {/* Glam Gold Badge */}
