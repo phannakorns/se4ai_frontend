@@ -40,32 +40,41 @@ export default function Home() {
     <div className="min-h-screen">
       <Header />
       
-      <main className="container mx-auto px-4 py-8 max-w-7xl">
-        {/* Banner */}
-        <div className="mb-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-kku-maroon mb-3">
-            ระบบตรวจจับวัตถุด้วย YOLO
-          </h1>
-          <p className="text-gray-600 text-lg">
-            มหาวิทยาลัยขอนแก่น | Khon Kaen University
-          </p>
-          <div className="mt-4 flex justify-center gap-4">
-            <span className="inline-block bg-kku-gold text-gray-900 px-4 py-2 rounded-full text-sm font-semibold">
-              Next.js Frontend
-            </span>
-            <span className="inline-block bg-kku-maroon text-white px-4 py-2 rounded-full text-sm font-semibold">
-              Flask Backend
-            </span>
-          </div>
-        </div>
+      <main className="container mx-auto px-4 py-8 max-w-7xl font-sans">
+  {/* Banner */}
+  <div className="mb-12 text-center relative">
+    {/* Decorative background element (optional glow) */}
+    <div className="absolute inset-0 flex justify-center items-center -z-10 opacity-20 blur-3xl">
+      <div className="w-64 h-64 bg-emerald-400 rounded-full mix-blend-multiply filter blur-2xl animate-blob"></div>
+      <div className="w-64 h-64 bg-amber-300 rounded-full mix-blend-multiply filter blur-2xl animate-blob animation-delay-2000 ml-10"></div>
+    </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {/* Upload Section */}
-          <div className="card">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4 flex items-center">
-              <span className="bg-kku-maroon text-white w-8 h-8 rounded-full flex items-center justify-center mr-3">
-                1
-              </span>
+    <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-800 to-teal-600 mb-4 drop-shadow-sm">
+      ระบบตรวจจับวัตถุด้วย YOLO
+    </h1>
+    <p className="text-gray-500 text-lg md:text-xl font-medium tracking-wide uppercase">
+      663380038-8 | พรรณกร แสงคำ
+    </p>
+    <div className="mt-6 flex justify-center gap-4">
+      {/* Glam Gold Badge */}
+      <span className="inline-block bg-gradient-to-r from-amber-200 to-amber-400 text-amber-950 px-6 py-2 rounded-full text-sm font-bold shadow-sm border border-amber-300/50">
+        ✨ Next.js Frontend
+      </span>
+      {/* Glam Emerald Badge */}
+      <span className="inline-block bg-gradient-to-r from-emerald-700 to-teal-700 text-white px-6 py-2 rounded-full text-sm font-bold shadow-md">
+        🚀 Flask Backend
+      </span>
+    </div>
+  </div>
+
+  <div className="grid md:grid-cols-2 gap-8">
+    {/* Upload Section */}
+    <div className="card bg-white/80 backdrop-blur-sm border border-gray-100 shadow-[0_8px_30px_rgb(0,0,0,0.12)] p-8 rounded-3xl">
+      <h2 className="text-2xl font-bold text-emerald-900 mb-6 flex items-center">
+        {/* Glam Number Circle with Gradient and Shadow */}
+        <span className="bg-gradient-to-tr from-emerald-700 to-teal-400 text-white w-10 h-10 rounded-full flex items-center justify-center mr-4 shadow-lg shadow-emerald-200/50 text-lg">
+          1
+        </span>
               อัปโหลดรูปภาพ
             </h2>
             <ImageUploader
