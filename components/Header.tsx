@@ -21,7 +21,7 @@ export default function Header() {
             {/* Text Details */}
             <div>
               <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">
-                YOLO <span className="text-emerald-500">SEAI</span>
+                YOLO <span className="text-emerald-500">Detection</span>
               </h1>
               <p className="text-xs md:text-sm text-gray-400 font-light tracking-wide">
                 Object Detection Web Application
